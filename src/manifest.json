@@ -1,0 +1,19 @@
+{
+  "name": "DLive Download Button",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://dlive.tv/p/*"
+      ],
+      "js": [
+        "js/inject.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    "js/intercept.js"
+  ]
+}
